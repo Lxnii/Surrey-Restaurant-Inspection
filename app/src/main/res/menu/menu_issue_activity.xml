@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Creating action bar buttons - helped acquired from 'John's Android Studio Tutorials':
+https://www.youtube.com/watch?v=5MSKuVO2hV4
+
+Back button obtained from
+https://material.io/resources/icons/?search=bac&icon=keyboard_backspace&style=baseline
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="back"
+        android:id="@+id/actionbar_back_issueActivity"
+        android:icon = "@drawable/baseline_keyboard_backspace_white"
+        app:showAsAction="always"
+        />
+</menu>

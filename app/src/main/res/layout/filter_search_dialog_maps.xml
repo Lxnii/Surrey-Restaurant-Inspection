@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp">
+
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/filter_textView_hazard_level_maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/filter_textView_hazard_level"/>
+
+    <Spinner
+        app:layout_constraintTop_toTopOf="@id/filter_textView_hazard_level_maps"
+        app:layout_constraintBottom_toBottomOf="@id/filter_textView_hazard_level_maps"
+        app:layout_constraintStart_toEndOf="@id/filter_textView_hazard_level_maps"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="15dp"
+        android:id="@+id/filter_spinner_hazard_levels_maps"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filter_textView_hazard_level_maps"
+        android:id="@+id/filter_textView_num_critical_violations_maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:text="@string/filter_textView_num_critical_violations"/>
+
+    <EditText
+        app:layout_constraintTop_toTopOf="@id/filter_checkBox_tag_favourite_maps"
+        app:layout_constraintBottom_toBottomOf="@id/filter_checkBox_tag_favourite_maps"
+        app:layout_constraintStart_toStartOf="@id/radio_group_comparisons_maps"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/filter_editText_num_critical_violations_maps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filter_textView_num_critical_violations_maps"
+        android:id="@+id/filter_textView_tag_favourite_maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:text="@string/filter_textView_tag_favourites"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/radio_group_comparisons_maps"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@id/filter_textView_num_critical_violations_maps"
+        app:layout_constraintBottom_toBottomOf="@id/filter_textView_num_critical_violations_maps"
+        app:layout_constraintStart_toEndOf="@id/filter_textView_num_critical_violations_maps"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton android:id="@+id/radio_less_than_equal_maps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_less_than_equal_maps"
+            android:checked="true"/>
+
+        <RadioButton android:id="@+id/radio_greater_than_equal_maps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_greater_than_equal_maps" />
+    </RadioGroup>
+
+    <CheckBox
+        app:layout_constraintTop_toTopOf="@id/filter_textView_tag_favourite_maps"
+        app:layout_constraintBottom_toBottomOf="@id/filter_textView_tag_favourite_maps"
+        app:layout_constraintStart_toEndOf="@id/filter_textView_tag_favourite_maps"
+        app:layout_constraintEnd_toStartOf="@id/filter_editText_num_critical_violations_maps"
+        android:id="@+id/filter_checkBox_tag_favourite_maps"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

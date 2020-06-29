@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Restoran Uygulaması</string>
+
+    <string name="inspection_days">\u0020günler önce</string>
+    <string name="inspection_day">\u0020gün önce</string>
+    <string name="unmatchedIssueCode">Bilinmeyen</string>
+    <string name="inspectNumCritIssues"># Kritik meseleler:</string>
+    <string name="inspectionNumNonCritIssues"># Kritik olmayan sorunlar:</string>
+    <string name="inspectionNumNonCritValue">#</string>
+    <string name="inspectionNumCritValue">#</string>
+    <string name="inspectionInspectionDateValue">Teftiş_tarihi</string>
+    <string name="inspectionInspectionDate">Teftiş Tarihi:</string>
+    <string name="inspectionHazardLevel">Tehlike:</string>
+    <string name="inspectionRestaurantName">Restoran:</string>
+    <string name="inspectionRestaurantNameValue">Restoran_adı</string>
+    <string name="inspectionAddress">Adres:</string>
+    <string name="inspectionCoordinates">GPS Koordinatları:</string>
+    <string name="inspectionAddressValue">Fiziksel_adres</string>
+    <string name="inspectionLatitude">49.2000</string>
+    <string name="inspectionLongitude">-122.867</string>
+    <string name="restaurantName">Restoran Adı</string>
+    <string name="restaurantNumIssues">Num konular:</string>
+    <string name="restaurantNumIssuesValue">#</string>
+    <string name="restaurantHazardLevel">Tehlike:</string>
+    <string name="restaurantLastInspection">Teftiş tarihi:</string>
+    <string name="restaurantLastInspectionValue">Tarih:</string>
+    <string name="inspectionBackBtn">geri</string>
+    <string name="issue_brief_description">Kısa Açıklama</string>
+    <string name="issue_violation_type_value">İhlal_tipi</string>
+    <string name="issue_violation_type">Ihlal Doğası:</string>
+    <string name="issueSeverity">KritikVeyaKritikOlmayan</string>
+    <string name="issue_hazard_level_value">Tehlike_düzeyi</string>
+    <string name="issue_hazard_level">Tehlike:</string>
+    <string name="issue_inspection_date_value">Teftiş_tarihi</string>
+    <string name="issue_inspection_date">Teftiş Tarihi:</string>
+    <string name="issue_inspection_type">Muayene Türü:</string>
+    <string name="issue_inspection_type_value">sorunTipi</string>
+    <string name="issue_num_critical_issues">Kritik Meseleler:</string>
+    <string name="issue_num_critical_issues_value"># Sorunlar</string>
+    <string name="issue_num_non_critical_issues">Kritik Olmayan Sorunlar:</string>
+    <string name="issue_num_non_critical_issues_value"># Sorunlar</string>
+    <string name="no_inspections">Hiçbir muayene henüz</string>
+
+    <string name="main_legend_low_hazard">Düşük Tehlike</string>
+    <string name="main_legend_high_hazard">Yüksek Tehlike</string>
+    <string name="main_legend_moderate_hazard">Ilımlı Tehlike</string>
+
+    <string name="violation_type_building">Building|Önerme düzenlemelerine kadar değil</string>
+    <string name="violation_type_equipment">Equipment|Ekipmanları düzgün muhafaza veya uygun ekipman eksik değil</string>
+    <string name="violation_type_food">Food|Depolanması pişirme veya gıda alma ile ilgili sorunlar</string>
+    <string name="violation_type_staff">Staff|Çalışanlar gıda ile uğraşan uygun kurallara uymayan</string>
+    <string name="violation_type_permit">Permit|İzni ile hiçbir izin veya sorunları ile Çalışma</string>
+    <string name="violation_type_pests">Pests|Hayvanlar mevcut veya koşullar zararlıları girmesini sağlayabilir</string>
+
+    <string name="inspection_month_january">Ocak</string>
+    <string name="inspection_month_february">Şubat</string>
+    <string name="inspection_month_march">Mart</string>
+    <string name="inspection_month_april">Nisan</string>
+    <string name="inspection_month_may">Mayıs</string>
+    <string name="inspection_month_june">Haziran</string>
+    <string name="inspection_month_july">Temmuz</string>
+    <string name="inspection_month_august">Ağustos</string>
+    <string name="inspection_month_september">Eylül</string>
+    <string name="inspection_month_october">Ekim</string>
+    <string name="inspection_month_november">Kasım</string>
+    <string name="inspection_month_december">Aralık</string>
+    <string name="title_activity_maps">Harita</string>
+
+    <string name="downloading">İndirilmesi</string>
+    <string name="downloadingwait">Lütfen bekleyin, veri indiriyor.</string>
+    <string name="downloadingcancel">İptal etmek</string>
+    <string name="downloadingfinish">Bitiş</string>
+    <string name="updateAvailable">Güncelleme uygun</string>
+    <string name="updateAvailableMsg">Şimdi güncellemek ister misiniz? \n
+    Hayır ise, bu bir sonraki uygulama kaçak tekrar açılır.</string>
+
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <string name="dataLoading">Veri yükleniyor. Tamamlandığında yenilenir.</string>
+    <string name="loading">Yükleniyor</string>
+
+    <string name="stopFollow">Dur Takip</string>
+
+    <string name="title_activity_restaurants">Restoranlar</string>
+    <string name="title_activity_inspections">Denetimler</string>
+    <string name="title_activity_issues">Sorunlar</string>
+
+    <string name="type_building">Bina</string>
+    <string name="type_equipment">Ekipman</string>
+    <string name="type_food">Gıda</string>
+    <string name="type_staff">Personel</string>
+    <string name="type_permit">Izin</string>
+    <string name="type_pests">Zararlılar</string>
+
+    <string name="hazard_level">Tehlike Düzeyi:\u0020</string>
+
+    <string name="action_search">Arama</string>
+    <string name="action_maps">haritalar</string>
+    <string name="filter_textView_hazard_level">Tehlike Düzeyi</string>
+    <string name="filter_textView_tag_favourites">Favoriler</string>
+    <string name="filter_stringarray_hazard_default_level">Tehlike düzeyini seçin…</string>
+    <string name="filter_stringarray_hazard_low_level">Düşük</string>
+    <string name="filter_stringarray_hazard_moderate_level">Ilımlı</string>
+    <string name="filter_stringarray_hazard_high_level">Yüksek</string>
+    <string name="filter_textView_num_critical_violations">Kritik Sayı Sorunlar</string>
+    <string name="favouriteRestaurant">Favori</string>
+    <string name="view_favourites">Sık kullanılanları görüntüle</string>
+    <string name="radio_less_than_equal_maps"><![CDATA[<=]]></string>
+    <string name="radio_greater_than_equal_maps"><![CDATA[>=]]></string>
+    <string name="radio_less_than_equal"><![CDATA[<=]]></string>
+    <string name="radio_greater_than_equal"><![CDATA[>=]]></string>
+    <string name="toast_msg_recent_inspections_fav_restaurants">Favori restoranlar için son kontrolleri var güncellenir</string>
+    <string name="alert_filter_dialog_title">Filtre Ayarları</string>
+    <string name="alert_filter_dialog_positive">Onaylamak</string>
+    <string name="alert_filter_dialog_negative">Sıfırla</string>
+
+    <string name="hazard_level_low">Düşük</string>
+    <string name="hazard_level_moderate">Ilımlı</string>
+    <string name="hazard_level_high">Yüksek</string>
+
+    <string name="issue_severity_critical">Kritik</string>
+    <string name="issue_severity_notcritical">Kritik değil</string>
+
+    <string name="mainactivity_toast_text">Sen arama sorgusunu temizleyin ve Maps geçmeden önce filtreleri sıfırlayın gerekir</string>
+    <string name="mapsactivity_toast_text">Sen arama sorgusunu temizleyin ve Restoran listeye geçmeden önce filtreleri sıfırlayın gerekir</string>
+
+    <string name="title_activity_new_inspections_for_favourites">Sık: Son Muayene</string>
+</resources>

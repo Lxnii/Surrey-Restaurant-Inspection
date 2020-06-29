@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--- https://www.flaticon.com/free-icon/complain_1041891?term=exclamation%20mark&page=1&position=20 yellow_alert picture
+https://www.hiclipart.com/free-transparent-background-png-clipart-iyhth green_alert picture
+https://commons.wikimedia.org/wiki/File:GHS-pictogram-exclam.svg red_alert picture
+https://www.flaticon.com/free-icon/store_123403 restaurant icon1
+https://www.flaticon.com/free-icon/store_138310 restaurant icon2
+https://www.flaticon.com/free-icon/store_138313 restaurant icon3
+https://www.flaticon.com/free-icon/online-store_265754 restaurant icon4
+-->
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    android:padding="4dp"
+    android:backgroundTint="@color/quantum_yellow"
+    android:layout_marginTop="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/favouriteRestaurantName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:maxLines="1"
+            android:text="@string/restaurantName"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/favouriteRestaurantNumIssues"
+            app:layout_constraintEnd_toStartOf="@+id/favouriteRestaurantHazardLevelColour"
+            app:layout_constraintStart_toEndOf="@id/favouriteRestaurantIcon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/favouriteRestaurantNumIssues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="10dp"
+            android:maxLines="1"
+            android:text="@string/restaurantNumIssues"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/favouriteRestaurantInspectionDate"
+            app:layout_constraintStart_toEndOf="@id/favouriteRestaurantIcon" />
+
+        <TextView
+            android:id="@+id/favouriteRestaurantNumIssuesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:maxLines="1"
+            android:text="@string/restaurantNumIssuesValue"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/favouriteRestaurantNumIssues"
+            app:layout_constraintStart_toEndOf="@id/favouriteRestaurantNumIssues"
+            app:layout_constraintTop_toTopOf="@id/favouriteRestaurantNumIssues" />
+
+
+        <TextView
+            android:id="@+id/favouriteRestaurantHazardLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:maxLines="1"
+            android:text="@string/restaurantHazardLevel"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/favouriteRestaurantNumIssues"
+            app:layout_constraintStart_toEndOf="@id/favouriteRestaurantNumIssuesValue"
+            app:layout_constraintTop_toTopOf="@id/favouriteRestaurantNumIssues" />
+
+        <ImageView
+            android:id="@+id/favouriteRestaurantHazardLevelIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:maxLines="1"
+            android:src="@drawable/green_alert"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/favouriteRestaurantHazardLevel"
+            app:layout_constraintStart_toEndOf="@id/favouriteRestaurantHazardLevel"
+            app:layout_constraintTop_toTopOf="@id/favouriteRestaurantHazardLevel" />
+
+        <ImageView
+            android:id="@+id/favouriteRestaurantIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/restaurant_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/favouriteRestaurantHazardLevelColour"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/greenBar"
+            android:padding="25dp"
+            android:src="@drawable/ic_launcher_background"
+            android:tint="@color/greenBar"
+            app:layout_constraintBottom_toBottomOf="@id/favouriteRestaurantInspectionDateValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/favouriteRestaurantInspectionDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:maxLines="1"
+            android:text="@string/restaurantLastInspection"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/favouriteRestaurantIcon"
+            app:layout_constraintStart_toEndOf="@id/favouriteRestaurantIcon" />
+
+        <TextView
+            android:id="@+id/favouriteRestaurantInspectionDateValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/restaurantLastInspectionValue"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/favouriteRestaurantInspectionDate"
+            app:layout_constraintEnd_toStartOf="@+id/favouriteRestaurantHazardLevelColour"
+            app:layout_constraintStart_toEndOf="@id/favouriteRestaurantInspectionDate"
+            app:layout_constraintTop_toTopOf="@id/favouriteRestaurantInspectionDate" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.97" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Demande Restaurant</string>
+
+    <string name="inspection_days">\u0020il y a quelques jours</string>
+    <string name="inspection_day">\u0020Il y a jour</string>
+    <string name="unmatchedIssueCode">Inconnue</string>
+    <string name="inspectNumCritIssues"># Des problèmes critiques:</string>
+    <string name="inspectionNumNonCritIssues"># Des problèmes non critiques:</string>
+    <string name="inspectionNumNonCritValue">#</string>
+    <string name="inspectionNumCritValue">#</string>
+    <string name="inspectionInspectionDateValue">Date_d\'inspection</string>
+    <string name="inspectionInspectionDate">Date d\'inspection:</string>
+    <string name="inspectionHazardLevel">Danger:</string>
+    <string name="inspectionRestaurantName">Restaurant:</string>
+    <string name="inspectionRestaurantNameValue">Nom_du_restaurant</string>
+    <string name="inspectionAddress">Adresse:</string>
+    <string name="inspectionCoordinates">Les Coordonnées GPS:</string>
+    <string name="inspectionAddressValue">Adresse Physique</string>
+    <string name="inspectionLatitude">49.2000</string>
+    <string name="inspectionLongitude">-122.867</string>
+    <string name="restaurantName">Nom du Restaurant</string>
+    <string name="restaurantNumIssues">Questions num:</string>
+    <string name="restaurantNumIssuesValue">#</string>
+    <string name="restaurantHazardLevel">Danger:</string>
+    <string name="restaurantLastInspection">Date d\'Inspection:</string>
+    <string name="restaurantLastInspectionValue">Date:</string>
+    <string name="inspectionBackBtn">arrière</string>
+    <string name="issue_brief_description">Brève Description</string>
+    <string name="issue_violation_type_value">Type_de_Violation</string>
+    <string name="issue_violation_type">Nature de l\'infraction:</string>
+    <string name="issueSeverity">CritiqueOuNonCritique</string>
+    <string name="issue_hazard_level_value">Niveau_de_danger</string>
+    <string name="issue_hazard_level">Danger:</string>
+    <string name="issue_inspection_date_value">Date_d\'inspection</string>
+    <string name="issue_inspection_date">Date d\'inspection:</string>
+    <string name="issue_inspection_type">Type d\'Inspection:</string>
+    <string name="issue_inspection_type_value">typeDeProbleme</string>
+    <string name="issue_num_critical_issues">Problèmes critiques:</string>
+    <string name="issue_num_critical_issues_value"># Problèmes</string>
+    <string name="issue_num_non_critical_issues">Problèmes Non Critiques:</string>
+    <string name="issue_num_non_critical_issues_value"># Problèmes</string>
+    <string name="no_inspections">Aucune inspection</string>
+
+    <string name="main_legend_low_hazard">Faible Risque</string>
+    <string name="main_legend_high_hazard">Risque Élevé</string>
+    <string name="main_legend_moderate_hazard">Risque Modéré</string>
+
+    <string name="violation_type_building">Building|Prémisse est pas à la réglementation</string>
+    <string name="violation_type_equipment">Equipment|L\'équipement mal entretenu ou manque équipement approprié</string>
+    <string name="violation_type_food">Food|Problèmes de stockage ou d\'obtention de produits</string>
+    <string name="violation_type_staff">Staff|Le personnel ne suit pas les procédures appropriées</string>
+    <string name="violation_type_permit">Permit|Exploitation sans permis ou des problèmes avec permis</string>
+    <string name="violation_type_pests">Pests|Les conditions permettent aux ravageurs d\'entrer</string>
+
+    <string name="inspection_month_january">Janvier</string>
+    <string name="inspection_month_february">Février</string>
+    <string name="inspection_month_march">Mars</string>
+    <string name="inspection_month_april">Avril</string>
+    <string name="inspection_month_may">Peut</string>
+    <string name="inspection_month_june">Juin</string>
+    <string name="inspection_month_july">Juillet</string>
+    <string name="inspection_month_august">Août</string>
+    <string name="inspection_month_september">Septembre</string>
+    <string name="inspection_month_october">Octobre</string>
+    <string name="inspection_month_november">Novembre</string>
+    <string name="inspection_month_december">Décembre</string>
+    <string name="title_activity_maps">Carte</string>
+
+    <string name="downloading">Téléchargement</string>
+    <string name="downloadingwait">S\'il vous plaît attendre, les données sont en cours de téléchargement.</string>
+    <string name="downloadingcancel">Annuler</string>
+    <string name="downloadingfinish">Terminer</string>
+    <string name="updateAvailable">Mise à jour disponible</string>
+    <string name="updateAvailableMsg">Voulez-vous mettre à jour maintenant? \n
+    Si non, cela apparaîtra à nouveau sur la prochaine exécution de l\'application.</string>
+
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="dataLoading">Chargement des données. Rafraîchira lorsque vous avez terminé.</string>
+    <string name="loading">Chargement</string>
+
+    <string name="stopFollow">Arrêt Suivre</string>
+
+    <string name="title_activity_restaurants">Restaurants</string>
+    <string name="title_activity_inspections">Inspections</string>
+    <string name="title_activity_issues">Problèmes</string>
+
+    <string name="type_building">Bâtiment</string>
+    <string name="type_equipment">Équipement</string>
+    <string name="type_food">Aliments</string>
+    <string name="type_staff">Personnel</string>
+    <string name="type_permit">Permis</string>
+    <string name="type_pests">Ravageurs</string>
+
+    <string name="hazard_level">Danger Niveau:\u0020</string>
+
+    <string name="action_search">Chercher</string>
+    <string name="action_maps">Plans</string>
+    <string name="filter_textView_hazard_level">Niveau de risque</string>
+    <string name="filter_textView_tag_favourites">Favoris</string>
+    <string name="filter_stringarray_hazard_default_level">Choisissez le niveau de danger …</string>
+    <string name="filter_stringarray_hazard_low_level">Faible</string>
+    <string name="filter_stringarray_hazard_moderate_level">Modéré</string>
+    <string name="filter_stringarray_hazard_high_level">Haute</string>
+    <string name="filter_textView_num_critical_violations">Nombre de problèmes critiques</string>
+    <string name="favouriteRestaurant">Favori</string>
+    <string name="view_favourites">Voir les Favoris</string>
+    <string name="radio_less_than_equal_maps"><![CDATA[<=]]></string>
+    <string name="radio_greater_than_equal_maps"><![CDATA[>=]]></string>
+    <string name="radio_less_than_equal"><![CDATA[<=]]></string>
+    <string name="radio_greater_than_equal"><![CDATA[>=]]></string>
+    <string name="toast_msg_recent_inspections_fav_restaurants">Il y a des mises à jour récentes inspections pour vos restaurants préférés</string>
+    <string name="alert_filter_dialog_title">Paramètres du filtre</string>
+    <string name="alert_filter_dialog_positive">Confirmer</string>
+    <string name="alert_filter_dialog_negative">Réinitialiser</string>
+
+    <string name="hazard_level_low">Faible</string>
+    <string name="hazard_level_moderate">Modéré</string>
+    <string name="hazard_level_high">Haute</string>
+
+    <string name="issue_severity_critical">Critique</string>
+    <string name="issue_severity_notcritical">Non Critique</string>
+
+    <string name="mainactivity_toast_text">Vous devez effacer la requête de recherche, et réinitialiser les filtres avant de passer à carte</string>
+    <string name="mapsactivity_toast_text">Vous devez effacer la requête de recherche, et réinitialiser les filtres avant de passer à la liste des restaurants</string>
+
+    <string name="title_activity_new_inspections_for_favourites">Favoris: Inspection Récente</string>
+</resources>

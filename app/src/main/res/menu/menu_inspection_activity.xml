@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Creating action bar buttons - helped acquired from 'John's Android Studio Tutorials':
+https://www.youtube.com/watch?v=5MSKuVO2hV4
+
+Back button obtained from
+https://material.io/resources/icons/?search=bac&icon=keyboard_backspace&style=baseline
+
+Helped for creating "hazard legend" option in toolbar:
+https://www.codingdemos.com/android-options-menu-icon/
+
+Info icon from: https://material.io/resources/icons/?search=info&icon=info&style=outline
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_more"
+        android:title=""
+        android:icon="@drawable/outline_info_white_18dp"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_high_hazard"
+                android:icon="@drawable/red_alert"
+                android:title="@string/main_legend_high_hazard"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/action_moderate_hazard"
+                android:icon="@drawable/yellow_alert"
+                android:title="@string/main_legend_moderate_hazard"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/action_low_hazard"
+                android:icon="@drawable/green_alert"
+                android:title="@string/main_legend_low_hazard"
+                app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+
+    <item
+        android:title="@string/inspectionBackBtn"
+        android:id="@+id/actionbar_back_inspectionActivity"
+        android:icon = "@drawable/baseline_keyboard_backspace_white"
+        app:showAsAction="always" />
+</menu>

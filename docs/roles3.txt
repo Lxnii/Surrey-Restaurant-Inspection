@@ -1,0 +1,17 @@
+Iteration 1:
+Elena Ho [hoelenah]: Scrum Master
+Hazem Hisham [helmegha]: Product Owner
+Jordan Chiu [jsc43]: Repo Manager
+Nathan Li [xla188]: Team Member
+
+Iteration 2:
+Elena Ho [hoelenah]: Repo Manager
+Hazem Hisham [helmegha]: Scrum Master
+Jordan Chiu [jsc43]: Team Member
+Nathan Li [xla188]: Product Owner
+
+Iteration 3:
+Elena Ho [hoelenah]: Product Owner
+Hazem Hisham [helmegha]: Team Member
+Jordan Chiu [jsc43]: Scrum Master
+Nathan Li [xla188]: Repo Manager

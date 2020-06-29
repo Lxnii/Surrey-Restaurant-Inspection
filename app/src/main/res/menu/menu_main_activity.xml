@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Creating action bar buttons - helped acquired from 'John's Android Studio Tutorials':
+https://www.youtube.com/watch?v=5MSKuVO2hV4
+
+Helped for creating "hazard legend" option in toolbar:
+https://www.codingdemos.com/android-options-menu-icon/
+
+Info icon from: https://material.io/resources/icons/?search=info&icon=info&style=outline
+
+Used the videos below to learn how to create the search btn in the actionbar
+https://www.youtube.com/watch?v=sJ-Z9G0SDhc&t=693s
+https://www.youtube.com/watch?v=CTvzoVtKoJ8&t=45s
+
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:title="@string/action_maps"
+        android:id="@+id/action_maps"
+        android:icon = "@android:drawable/ic_menu_mapmode"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/action_more"
+        android:title=""
+        android:icon="@drawable/outline_info_white_18dp"
+        app:showAsAction="always">
+    <menu>
+        <item
+            android:id="@+id/action_high_hazard"
+            android:icon="@drawable/red_alert"
+            android:title="@string/main_legend_high_hazard"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/action_moderate_hazard"
+            android:icon="@drawable/yellow_alert"
+            android:title="@string/main_legend_moderate_hazard"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/action_low_hazard"
+            android:icon="@drawable/green_alert"
+            android:title="@string/main_legend_low_hazard"
+            app:showAsAction="ifRoom" />
+     </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_search"
+        android:title="@string/action_search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title=""
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="always"
+        />
+
+
+</menu>

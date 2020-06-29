@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!---
+Critical picture: https://www.flaticon.com/free-icon/report_1632752?term=exclamation&page=1&position=55&fbclid=IwAR2cL1m2CNr8UWPrSxhjfnfdus9KiEoABzU2f2guY6bjqeeWOSp-tPi8YUU
+Non-Critical picture: https://www.flaticon.com/free-icon/exclamation_1636062?term=warning&page=1&position=63&fbclid=IwAR0TNs_m6UwRbhrdaighUG_40SZUGa-rutOYFDlUGDTs32_E-c9eQD5Tdz4
+
+Building type icon: https://www.flaticon.com/free-icon/store_1802257?term=restaurant%20building&page=1&position=40
+Equipment type icon: https://www.flaticon.com/free-icon/food_608857?term=cutlery&page=1&position=14
+Food type icon: https://www.flaticon.com/free-icon/fruits_1546582?term=food%20box&page=3&position=18&fbclid=IwAR2IkrkvswyD6z22tX84TiurG2VTvRfwyTSdMJmom8gUVwUHdeFTvHQt9uA
+Pests type icon: https://www.flaticon.com/free-icon/cockroach_597515?term=cockroach&page=1&position=3
+Staff type icon:https://www.flaticon.com/free-icon/maid_471778?term=staff&page=1&position=23
+Permit type icon: https://www.flaticon.com/free-icon/contract_684930?term=paper&page=1&position=74
+-->
+
+
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    android:padding="4dp"
+    android:layout_marginTop="5dp">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IssueActivity">
+
+    <TextView
+        android:id="@+id/issueSeverity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:maxLines="1"
+        android:text="@string/issueSeverity"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/issueSeverityIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/noncritical_alert"
+        android:maxLines="1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/issueSeverity"
+        app:layout_constraintBottom_toBottomOf="@id/issueSeverity"
+        app:layout_constraintTop_toTopOf="@id/issueSeverity"/>
+
+    <ImageView
+        android:id="@+id/issueSeverityColourBar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/greenBar"
+        android:src="@drawable/ic_launcher_background"
+        android:tint="@color/greenBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/issueGuideline"
+        app:layout_constraintBottom_toBottomOf="@id/issueBriefDescription"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/issueViolationType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:text="@string/issue_violation_type"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/issueSeverity" />
+
+
+    <TextView
+        android:id="@+id/issueViolationTypeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:text="@string/issue_violation_type_value"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/issueViolationType"
+        app:layout_constraintTop_toBottomOf="@id/issueSeverity" />
+
+    <ImageView
+        android:id="@+id/issueViolationTypeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:textSize="13sp"
+        android:src="@drawable/food_type_icon"
+        app:layout_constraintStart_toEndOf="@id/issueViolationTypeValue"
+        app:layout_constraintTop_toBottomOf="@id/issueSeverity" />
+
+    <TextView
+        android:id="@+id/issueBriefDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:text="@string/issue_brief_description"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/issueGuideline"
+        app:layout_constraintTop_toBottomOf="@id/issueViolationType" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/issueGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--- https://www.flaticon.com/free-icon/complain_1041891?term=exclamation%20mark&page=1&position=20 yellow_alert picture
+https://www.hiclipart.com/free-transparent-background-png-clipart-iyhth green_alert picture
+https://commons.wikimedia.org/wiki/File:GHS-pictogram-exclam.svg red_alert picture
+-->
+
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    android:padding="4dp"
+    android:layout_marginTop="5dp">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InspectionActivity">
+
+    <TextView
+        android:id="@+id/inspectionNumCrit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:text="@string/inspectNumCritIssues"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/inspectionNumNonCrit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:text="@string/inspectionNumNonCritIssues"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inspectionNumCrit" />
+
+    <TextView
+        android:id="@+id/inspectionNumNonCritValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:maxLines="1"
+        android:text="@string/inspectionNumNonCritValue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/inspectionNumNonCrit"
+        app:layout_constraintStart_toEndOf="@id/inspectionNumNonCrit"
+        app:layout_constraintTop_toTopOf="@id/inspectionNumNonCrit" />
+
+
+    <TextView
+        android:id="@+id/inspectionNumCritValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:maxLines="1"
+        android:text="@string/inspectionNumCritValue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/inspectionNumCrit"
+        app:layout_constraintStart_toEndOf="@+id/inspectionNumCrit"
+        app:layout_constraintTop_toTopOf="@+id/inspectionNumCrit" />
+
+    <TextView
+        android:id="@+id/inspectionHazardLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:maxLines="1"
+        android:text="@string/inspectionHazardLevel"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/inspectionNumNonCritValue"
+        app:layout_constraintTop_toTopOf="@id/inspectionNumNonCrit" />
+
+
+    <ImageView
+        android:id="@+id/inspectionHazardLevelIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/green_alert"
+        android:maxLines="1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/inspectionHazardLevel"
+        app:layout_constraintBottom_toBottomOf="@id/inspectionHazardLevel"
+        app:layout_constraintTop_toTopOf="@id/inspectionHazardLevel"/>
+
+
+    <ImageView
+        android:id="@+id/inspectionHazardLevelColourBar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/greenBar"
+        android:src="@drawable/ic_launcher_background"
+        android:tint="@color/greenBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/inspectionInspectionDateValue"
+        app:layout_constraintStart_toEndOf="@id/inspectionGuideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/inspectionInspectionDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:text="@string/inspectionInspectionDate"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inspectionNumNonCrit" />
+
+    <TextView
+        android:id="@+id/inspectionInspectionDateValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:maxLines="1"
+        android:text="@string/inspectionInspectionDateValue"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/inspectionInspectionDate"
+        app:layout_constraintTop_toTopOf="@id/inspectionInspectionDate" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/inspectionGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

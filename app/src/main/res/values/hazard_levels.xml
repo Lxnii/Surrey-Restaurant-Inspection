@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hazard_levels">
+        <item>@string/filter_stringarray_hazard_default_level</item>
+        <item>@string/filter_stringarray_hazard_low_level</item>
+        <item>@string/filter_stringarray_hazard_moderate_level</item>
+        <item>@string/filter_stringarray_hazard_high_level</item>
+    </string-array>
+</resources>

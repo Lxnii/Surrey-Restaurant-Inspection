@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IssueActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/issueGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7017784" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activity_issue_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/darker_gray"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/issueGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/issueGuideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/round_layout"
+        />
+
+    <TextView
+        android:id="@+id/issueInspectionDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/issue_inspection_date"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/issueInspectionType"
+        app:layout_constraintTop_toTopOf="@+id/issueGuideline" />
+
+    <TextView
+        android:id="@+id/issueInspectionDateValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/issue_inspection_date_value"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/issueInspectionDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/issueInspectionDate"
+        app:layout_constraintTop_toTopOf="@+id/issueInspectionDate" />
+
+    <TextView
+        android:id="@+id/issueInspectionType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/issue_inspection_type"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="17sp"
+        android:typeface="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/issueNumCriticalIssues"
+        app:layout_constraintTop_toBottomOf="@+id/issueInspectionDate" />
+
+
+
+    <TextView
+        android:id="@+id/issueInspectionTypeValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/issue_inspection_type_value"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="18sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/issueInspectionType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/issueInspectionType"
+        app:layout_constraintTop_toTopOf="@+id/issueInspectionType" />
+
+    <TextView
+        android:id="@+id/issueNumCriticalIssues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/issue_num_critical_issues"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="17sp"
+        android:typeface="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/issueNumNonCriticalIssues"
+        app:layout_constraintTop_toBottomOf="@+id/issueInspectionType" />
+
+
+    <TextView
+        android:id="@+id/issueNumCriticalIssuesValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/issue_num_critical_issues_value"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="18sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/issueNumCriticalIssues"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/issueNumCriticalIssues"
+        app:layout_constraintTop_toTopOf="@+id/issueNumCriticalIssues" />
+
+    <TextView
+        android:id="@+id/issueNumNonCriticalIssues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/issue_num_non_critical_issues"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="17sp"
+        android:typeface="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/issueHazardLevel"
+        app:layout_constraintTop_toBottomOf="@+id/issueNumCriticalIssues" />
+
+    <TextView
+        android:id="@+id/issueNumNonCriticalIssuesValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/issue_num_non_critical_issues_value"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="18sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/issueNumNonCriticalIssues"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/issueNumNonCriticalIssues"
+        app:layout_constraintTop_toTopOf="@+id/issueNumNonCriticalIssues" />
+
+    <TextView
+        android:id="@+id/issueHazardLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/issue_hazard_level"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="17sp"
+        android:typeface="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/issueNumNonCriticalIssues" />
+
+    <TextView
+        android:id="@+id/issueHazardLevelValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/issue_hazard_level_value"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="18sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/issueHazardLevel"
+        app:layout_constraintStart_toEndOf="@+id/issueHazardLevel"
+        app:layout_constraintTop_toTopOf="@+id/issueHazardLevel" />
+
+    <ImageView
+        android:id="@+id/issueHazardLevelIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/green_alert"
+        android:maxLines="1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/issueHazardLevelValue"
+        app:layout_constraintBottom_toBottomOf="@id/issueHazardLevelValue"
+        app:layout_constraintTop_toTopOf="@id/issueHazardLevelValue"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/issueGuideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.74" />
+
+    <ImageView
+        android:id="@+id/issueHazardLevelColourBar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:background="@color/greenBar"
+        android:src="@drawable/ic_launcher_background"
+        android:tint="@color/greenBar"
+        app:layout_constraintEnd_toEndOf="@id/issueGuideline2"
+        app:layout_constraintStart_toEndOf="@id/issueHazardLevelIcon"
+        app:layout_constraintTop_toTopOf="@id/issueHazardLevelIcon"
+        app:layout_constraintBottom_toBottomOf="@id/issueHazardLevelIcon"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

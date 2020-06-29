@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Restaurace Aplikace</string>
+
+    <string name="inspection_days">\u0020před pár dny</string>
+    <string name="inspection_day">\u0020před den</string>
+    <string name="unmatchedIssueCode">Neznámý</string>
+    <string name="inspectNumCritIssues"># Kritické problémy:</string>
+    <string name="inspectionNumNonCritIssues"># Non-kritické problémy:</string>
+    <string name="inspectionNumNonCritValue">#</string>
+    <string name="inspectionNumCritValue">#</string>
+    <string name="inspectionInspectionDateValue">Datum_inspekce</string>
+    <string name="inspectionInspectionDate">Datum Inspekce:</string>
+    <string name="inspectionHazardLevel">Nebezpečí:</string>
+    <string name="inspectionRestaurantName">Restaurace:</string>
+    <string name="inspectionRestaurantNameValue">Název_Restaurace</string>
+    <string name="inspectionAddress">Adresa:</string>
+    <string name="inspectionCoordinates">GPS Souřadnice:</string>
+    <string name="inspectionAddressValue">Fyzická_Adresa</string>
+    <string name="inspectionLatitude">49.2000</string>
+    <string name="inspectionLongitude">-122.867</string>
+    <string name="restaurantName">Restaurace Název</string>
+    <string name="restaurantNumIssues">Num problémy:</string>
+    <string name="restaurantNumIssuesValue">#</string>
+    <string name="restaurantHazardLevel">Nebezpečí:</string>
+    <string name="restaurantLastInspection">Datum Inspekce:</string>
+    <string name="restaurantLastInspectionValue">Datum:</string>
+    <string name="inspectionBackBtn">zadní</string>
+    <string name="issue_brief_description">Stručný Dopis</string>
+    <string name="issue_violation_type_value">Typ_porušení</string>
+    <string name="issue_violation_type">Povaha porušení:</string>
+    <string name="issueSeverity">KritickáNeboNekritický</string>
+    <string name="issue_hazard_level_value">Stupeň_Nebezpečí</string>
+    <string name="issue_hazard_level">Nebezpečí:</string>
+    <string name="issue_inspection_date_value">Datum_Inspekce</string>
+    <string name="issue_inspection_date">Datum Inspekce:</string>
+    <string name="issue_inspection_type">Inspekce Typ:</string>
+    <string name="issue_inspection_type_value">typVydání</string>
+    <string name="issue_num_critical_issues">Kritické Problémy:</string>
+    <string name="issue_num_critical_issues_value"># Problémy</string>
+    <string name="issue_num_non_critical_issues">Nekritické Problémy:</string>
+    <string name="issue_num_non_critical_issues_value"># Problémy</string>
+    <string name="no_inspections">Zatím žádná kontrola</string>
+
+    <string name="main_legend_low_hazard">Nízké Nebezpečí</string>
+    <string name="main_legend_high_hazard">Vysoké Nebezpečí</string>
+    <string name="main_legend_moderate_hazard">Mírná Nebezpečí</string>
+
+    <string name="violation_type_building">Building|Premise není až předpisů</string>
+    <string name="violation_type_equipment">Equipment|Zařízení není řádně udržovány nebo chybí správné vybavení</string>
+    <string name="violation_type_food">Food|Problémy s uložením, vaření, nebo získávání potravy</string>
+    <string name="violation_type_staff">Staff|Zaměstnanci nesledují správné postupy nakládání s potravinami</string>
+    <string name="violation_type_permit">Permit|Provoz bez povolení nebo otázek s povolením</string>
+    <string name="violation_type_pests">Pests|Podmínky mohou umožnit vstup škůdcům</string>
+
+    <string name="inspection_month_january">Leden</string>
+    <string name="inspection_month_february">Únor</string>
+    <string name="inspection_month_march">Březen</string>
+    <string name="inspection_month_april">Duben</string>
+    <string name="inspection_month_may">Smět</string>
+    <string name="inspection_month_june">Červen</string>
+    <string name="inspection_month_july">Červenec</string>
+    <string name="inspection_month_august">Srpen</string>
+    <string name="inspection_month_september">Září</string>
+    <string name="inspection_month_october">Říjen</string>
+    <string name="inspection_month_november">Listopad</string>
+    <string name="inspection_month_december">Prosinec</string>
+    <string name="title_activity_maps">Mapa</string>
+
+    <string name="downloading">Stahování</string>
+    <string name="downloadingwait">Prosím, vyčkejte, data stahovat.</string>
+    <string name="downloadingcancel">Zrušení</string>
+    <string name="downloadingfinish">Dokončit</string>
+    <string name="updateAvailable">K dispozici je aktualizace</string>
+    <string name="updateAvailableMsg">Chtěli byste aktualizovat nyní? \n
+    Pokud ne, bude to vyskočí zase na další aplikace běhu.</string>
+
+    <string name="yes">Ano</string>
+    <string name="no">Ne</string>
+    <string name="dataLoading">Načítání dat. Obnoví po dokončení.</string>
+    <string name="loading">Načítání</string>
+
+    <string name="stopFollow">Přestaňte Sledovat</string>
+
+    <string name="title_activity_restaurants">Restaurace</string>
+    <string name="title_activity_inspections">Inspekce</string>
+    <string name="title_activity_issues">Problémy</string>
+
+    <string name="type_building">Budova</string>
+    <string name="type_equipment">Zařízení</string>
+    <string name="type_food">Jídlo</string>
+    <string name="type_staff">Personál</string>
+    <string name="type_permit">Povolení</string>
+    <string name="type_pests">Škůdci</string>
+
+    <string name="hazard_level">Stupeň nebezpečí:\u0020</string>
+
+    <string name="action_search">Vyhledávání</string>
+    <string name="action_maps">mapy</string>
+    <string name="filter_textView_hazard_level">Stupeň nebezpečí</string>
+    <string name="filter_textView_tag_favourites">Oblíbené</string>
+    <string name="filter_stringarray_hazard_default_level">Zvolit úroveň nebezpečí …</string>
+    <string name="filter_stringarray_hazard_low_level">Nízký</string>
+    <string name="filter_stringarray_hazard_moderate_level">Mírný</string>
+    <string name="filter_stringarray_hazard_high_level">Vysoký</string>
+    <string name="filter_textView_num_critical_violations">Číslo kritický problém</string>
+    <string name="favouriteRestaurant">Oblíbený</string>
+    <string name="view_favourites">Zobrazit Oblíbené</string>
+    <string name="radio_less_than_equal_maps"><![CDATA[<=]]></string>
+    <string name="radio_greater_than_equal_maps"><![CDATA[>=]]></string>
+    <string name="radio_less_than_equal"><![CDATA[<=]]></string>
+    <string name="radio_greater_than_equal"><![CDATA[>=]]></string>
+    <string name="toast_msg_recent_inspections_fav_restaurants">Tam jsou aktualizovány nedávné inspekce svých oblíbených restaurací</string>
+    <string name="alert_filter_dialog_title">Nastavení filtru</string>
+    <string name="alert_filter_dialog_positive">Potvrdit</string>
+    <string name="alert_filter_dialog_negative">Reset</string>
+
+    <string name="hazard_level_low">Nízký</string>
+    <string name="hazard_level_moderate">Mírný</string>
+    <string name="hazard_level_high">Vysoký</string>
+
+    <string name="issue_severity_critical">Kritický</string>
+    <string name="issue_severity_notcritical">Není Kritická</string>
+
+    <string name="mainactivity_toast_text">Musíte vyčistit vyhledávací dotaz, a před pokračováním maps obnovit filtry</string>
+    <string name="mapsactivity_toast_text">Musíte vyčistit vyhledávací dotaz, a před pokračováním do seznamu Restaurant obnovit filtry</string>
+
+    <string name="title_activity_new_inspections_for_favourites">Oblíbené: Nový Inspekce</string>
+</resources>

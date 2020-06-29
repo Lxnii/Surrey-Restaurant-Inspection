@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Creating action bar buttons - helped acquired from 'John's Android Studio Tutorials':
+https://www.youtube.com/watch?v=5MSKuVO2hV4
+
+Helped for creating "hazard legend" option in toolbar:
+https://www.codingdemos.com/android-options-menu-icon/
+
+Info icon from: https://material.io/resources/icons/?search=info&icon=info&style=outline
+
+Used the videos below to learn how to create the search btn in the actionbar
+https://www.youtube.com/watch?v=sJ-Z9G0SDhc&t=693s
+https://www.youtube.com/watch?v=CTvzoVtKoJ8&t=45s
+
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_search_in_maps"
+        android:title="@string/action_search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+
+    <item
+        android:id="@+id/action_settings_in_maps"
+        android:title=""
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:title="@string/inspectionBackBtn"
+        android:id="@+id/actionbar_back_maps_inspection"
+        android:icon = "@drawable/baseline_keyboard_backspace_white"
+        android:visible="false"
+        app:showAsAction="always" />
+</menu>
